@@ -50,7 +50,7 @@
 </head>
 <body>
     <div class="login-box">
-        <h2>🔐 SLIIT vehicle park</h2>
+        <h2> SLIIT vehicle park</h2>
 
         <% if(request.getParameter("msg") != null) { %>
             <div style="color: green; text-align: center;">
