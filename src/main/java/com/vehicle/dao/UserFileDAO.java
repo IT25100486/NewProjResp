@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class UserFileDAO {
 
 
-    private static final String FILE_PATH = "D:\\SLIIT\\vehicle_data\\users.txt";
+    private static final String FILE_PATH = "D:\\SLIIT\\vehicle_data\\users.txt"; //set  data store path
     private static final AtomicInteger idCounter = new AtomicInteger(1);
 
     // Ensure file and directory exist

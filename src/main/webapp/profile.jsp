@@ -94,7 +94,7 @@
     </style>
     <script>
         function confirmDelete() {
-            return confirm('⚠️ Are you sure you want to delete your account?\nThis action cannot be undone!');
+            return confirm(' Are you sure you want to delete your account?\nThis action cannot be undone!');
         }
         function cancelEdit() { window.location.href = 'profile.jsp'; }
     </script>
@@ -102,16 +102,16 @@
 <body>
     <div class="profile-container">
         <div class="profile-header">
-            <h2>👤 Profile</h2>
+            <h2> Profile</h2>
             <p>Welcome, <%= user.getName() %>! (<%= user.getRole() %>)</p>
         </div>
         <div class="profile-body">
             <% if(session.getAttribute("message") != null) { %>
-                <div class="message success">✅ <%= session.getAttribute("message") %></div>
+                <div class="message success"> <%= session.getAttribute("message") %></div>
                 <% session.removeAttribute("message"); %>
             <% } %>
             <% if(session.getAttribute("error") != null) { %>
-                <div class="message error">❌ <%= session.getAttribute("error") %></div>
+                <div class="message error"> <%= session.getAttribute("error") %></div>
                 <% session.removeAttribute("error"); %>
             <% } %>
 
@@ -144,19 +144,19 @@
                     <input type="password" name="password" value="<%= user.getPassword() %>" required>
                 </div>
                 <div class="button-group">
-                    <button type="submit" class="btn-save">💾 Save</button>
-                    <button type="button" class="btn-cancel" onclick="cancelEdit()">❌ Cancel</button>
+                    <button type="submit" class="btn-save"> Save</button>
+                    <button type="button" class="btn-cancel" onclick="cancelEdit()"> Cancel</button>
                 </div>
             </form>
 
             <hr>
 
             <form action="deleteAccount" method="post" onsubmit="return confirmDelete()">
-                <button type="submit" class="btn-delete">🗑️ Delete Account</button>
+                <button type="submit" class="btn-delete"> Delete Account</button>
             </form>
 
             <div style="text-align: center;">
-                <a href="logout.jsp" class="logout-btn">🚪 Logout</a>
+                <a href="logout.jsp" class="logout-btn"> Logout</a>
             </div>
         </div>
     </div>
