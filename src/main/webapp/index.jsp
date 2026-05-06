@@ -6,19 +6,22 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            background-image: url('Images/Background-image.png');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
         }
         .login-box {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 20px;
             width: 350px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
         h2 { text-align: center; color: #333; }
         input {
@@ -40,6 +43,9 @@
         .register-link {
             text-align: center;
             margin-top: 15px;
+            color: #FFD700;
+            text-shadow: 1px 1px 2px black;
+            font-weight: bold;
         }
         .error {
             color: red;
