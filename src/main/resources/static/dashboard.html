@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Dashboard | Parkify</title>
+</head>
+<body class="bg-slate-900 text-slate-200 min-h-screen">
+
+<nav class="bg-slate-800 border-b border-slate-700 px-8 py-4 flex justify-between items-center sticky top-0 z-50">
+  <div class="text-2xl font-black text-indigo-500 tracking-tighter">PARKIFY</div>
+  <div class="flex items-center gap-6">
+    <span class="text-sm font-medium text-slate-400">Welcome, User</span>
+    <a href="index.html" class="bg-red-500/10 text-red-500 px-4 py-2 rounded-xl text-sm font-bold border border-red-500/20 hover:bg-red-500 hover:text-white transition">Logout</a>
+  </div>
+</nav>
+
+<main class="p-8 max-w-7xl mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+    <div class="bg-slate-800 p-6 rounded-3xl border border-slate-700">
+      <p class="text-slate-500 text-xs font-bold uppercase tracking-widest mb-1">Total Slots</p>
+      <h3 class="text-3xl font-bold">20</h3>
+    </div>
+    <div class="bg-slate-800 p-6 rounded-3xl border border-slate-700">
+      <p class="text-green-500 text-xs font-bold uppercase tracking-widest mb-1">Available</p>
+      <h3 class="text-3xl font-bold text-green-400">12</h3>
+    </div>
+    <div class="bg-slate-800 p-6 rounded-3xl border border-slate-700">
+      <p class="text-red-500 text-xs font-bold uppercase tracking-widest mb-1">Occupied</p>
+      <h3 class="text-3xl font-bold text-red-400">08</h3>
+    </div>
+  </div>
+
+  <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+    <span class="w-2 h-6 bg-indigo-500 rounded-full"></span>
+    Real-Time Parking Grid
+  </h2>
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+
+    <div class="bg-slate-800 border-2 border-red-500 p-6 rounded-3xl text-center shadow-lg shadow-red-500/10">
+      <div class="text-[10px] font-bold text-slate-500 mb-2">SLOT A-01</div>
+      <div class="text-lg font-mono font-bold text-white">WP-CAD-4321</div>
+      <button class="mt-4 w-full bg-red-500 hover:bg-red-600 text-white text-[10px] font-bold py-2 rounded-xl transition">RELEASE</button>
+    </div>
+
+    <div class="bg-slate-900 border-2 border-slate-700 border-dashed p-6 rounded-3xl text-center hover:border-indigo-500 group transition cursor-pointer">
+      <div class="text-[10px] font-bold text-slate-600 mb-2">SLOT A-02</div>
+      <div class="text-lg font-mono font-bold text-slate-700 group-hover:text-indigo-400">EMPTY</div>
+      <button class="mt-4 w-full border border-indigo-500/50 text-indigo-400 text-[10px] font-bold py-2 rounded-xl hover:bg-indigo-500 hover:text-white transition">PARK VEHICLE</button>
+    </div>
+
+  </div>
+</main>
+
+</body>
+</html>

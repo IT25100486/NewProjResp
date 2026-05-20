@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Parkify | Login</title>
+</head>
+<body class="bg-slate-900 flex items-center justify-center h-screen text-slate-200">
+<div class="bg-slate-800 p-10 rounded-3xl shadow-2xl w-96 border border-slate-700">
+    <h1 class="text-3xl font-bold text-center mb-2 text-indigo-400">Parkify</h1>
+    <p class="text-slate-400 text-center mb-8 text-sm">Vehicle Management System</p>
+
+    <form action="login" method="post" class="space-y-4">
+        <input type="text" name="userId" placeholder="User ID" required
+               class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:border-indigo-500 outline-none">
+        <input type="password" name="password" placeholder="Password" required
+               class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 focus:border-indigo-500 outline-none">
+        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 rounded-xl transition shadow-lg">Sign In</button>
+    </form>
+</div>
+</body>
+</html>
